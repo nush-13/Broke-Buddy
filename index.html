@@ -1719,335 +1719,70 @@
       line-height: 1.6;
     }
 
-    /* === TRANSACTIONS SCREEN === */
-    .txns-header {
-      padding: 18px 22px 14px;
-      position: sticky;
-      top: 0;
-      background: var(--warm-white);
-      z-index: 10;
-    }
-
-    .search-bar {
-      margin: 10px 18px 14px;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      background: white;
-      border: 1.5px solid var(--border);
-      border-radius: 12px;
-      padding: 10px 14px;
-      box-shadow: var(--shadow-sm);
-    }
-
-    .search-bar input {
-      border: none;
-      outline: none;
-      flex: 1;
-      font-family: 'Nunito', sans-serif;
-      font-size: 13px;
-      font-weight: 600;
-      color: var(--text-dark);
-    }
-
-    .filter-pills {
-      display: flex;
-      gap: 8px;
-      padding: 0 18px 10px;
-      overflow-x: auto;
-    }
-
-    .filter-pills::-webkit-scrollbar { display: none; }
-
-    .filter-pill {
-      padding: 6px 14px;
-      border-radius: 20px;
-      font-size: 11px;
-      font-weight: 700;
-      background: white;
-      border: 1.5px solid var(--border);
-      color: var(--text-soft);
-      cursor: pointer;
-      white-space: nowrap;
-    }
-
-    .filter-pill.active {
-      background: var(--peach-light);
-      border-color: var(--peach);
-      color: var(--peach);
-    }
-
-    .txn-group-label {
-      padding: 14px 22px 8px;
-      font-size: 11px;
-      font-weight: 800;
-      color: var(--text-soft);
-      text-transform: uppercase;
-      letter-spacing: 1px;
-    }
-
-    /* === PROFILE SCREEN === */
-    .profile-top {
-      padding: 30px 22px 20px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
-
-    .profile-avatar-wrap {
-      position: relative;
-      margin-bottom: 16px;
-    }
-
-    .profile-avatar {
-      width: 90px;
-      height: 90px;
-      font-size: 40px;
-      border-radius: 30px;
-      background: linear-gradient(135deg, var(--peach), var(--lavender));
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      box-shadow: var(--shadow-md);
-    }
-
-    .edit-badge {
-      position: absolute;
-      bottom: -4px;
-      right: -4px;
-      background: white;
-      width: 28px;
-      height: 28px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 14px;
-      box-shadow: var(--shadow-sm);
-      border: 1px solid var(--border);
-    }
-
-    .profile-name {
-      font-family: 'DM Serif Display', serif;
-      font-size: 24px;
-      color: var(--text-dark);
-    }
-
-    .profile-email {
-      font-size: 13px;
-      font-weight: 600;
-      color: var(--text-soft);
-      margin-top: 2px;
-    }
-
-    .profile-stats {
-      display: flex;
-      gap: 15px;
-      margin-top: 20px;
-      width: 100%;
-      padding: 0 20px;
-    }
-
-    .p-stat-card {
-      flex: 1;
-      background: white;
-      padding: 14px;
-      border-radius: 18px;
-      box-shadow: var(--shadow-sm);
-    }
-
-    .p-stat-val {
-      font-size: 16px;
-      font-weight: 800;
-      color: var(--text-dark);
-    }
-
-    .p-stat-lab {
-      font-size: 10px;
-      font-weight: 700;
-      color: var(--text-soft);
-      text-transform: uppercase;
-      margin-top: 2px;
-    }
-
-    .settings-list {
-      padding: 20px 20px;
-    }
-
-    .settings-group {
-      margin-bottom: 24px;
-    }
-
-    .settings-title {
-      font-size: 12px;
-      font-weight: 800;
-      color: var(--text-soft);
-      margin-bottom: 12px;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      padding-left: 4px;
-    }
-
-    .settings-item {
-      display: flex;
-      align-items: center;
-      gap: 14px;
-      background: white;
-      padding: 14px 16px;
-      border-radius: 16px;
-      margin-bottom: 8px;
-      box-shadow: var(--shadow-sm);
-      cursor: pointer;
-    }
-
-    .settings-item-icon {
-      width: 36px;
-      height: 36px;
-      border-radius: 10px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 18px;
-    }
-
-    .settings-item-label {
-      flex: 1;
-      font-size: 14px;
-      font-weight: 700;
-      color: var(--text-dark);
-    }
-
-    .settings-item-val {
-      font-size: 13px;
-      font-weight: 600;
-      color: var(--text-soft);
-    }
-
-    /* === CATEGORY DETAIL === */
-    .cat-detail-header {
-      background: linear-gradient(135deg, var(--peach-mid), var(--peach-light));
-      padding: 40px 22px 24px;
-      text-align: center;
-      position: relative;
-    }
-
-    .cat-back-btn {
-      position: absolute;
-      top: 18px;
-      left: 18px;
-      width: 36px;
-      height: 36px;
-      border-radius: 50%;
-      background: white;
-      border: none;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 16px;
-      box-shadow: var(--shadow-sm);
-      cursor: pointer;
-    }
-
-    .cat-detail-icon {
-      width: 70px;
-      height: 70px;
-      background: white;
-      border-radius: 24px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 32px;
-      margin: 0 auto 14px;
-      box-shadow: var(--shadow-md);
-    }
-
-    .cat-detail-name {
-      font-family: 'DM Serif Display', serif;
-      font-size: 28px;
-      color: var(--text-dark);
-    }
-
-    .cat-detail-spent {
-      font-size: 14px;
-      font-weight: 700;
-      color: var(--text-mid);
-      margin-top: 4px;
-    }
-
-    .cat-budget-card {
-      margin: -15px 18px 20px;
-      background: white;
-      border-radius: 20px;
-      padding: 18px;
-      box-shadow: var(--shadow-md);
-      position: relative;
-      z-index: 5;
-    }
-
-    .cb-top {
-      display: flex;
-      justify-content: space-between;
-      margin-bottom: 12px;
-    }
-
-    .cb-label {
-      font-size: 11px;
-      font-weight: 800;
-      color: var(--text-soft);
-      text-transform: uppercase;
-    }
-
-    .cb-pct {
-      font-size: 12px;
-      font-weight: 800;
-      color: var(--peach);
-    }
-
-    .cb-bar-wrap {
-      height: 8px;
-      background: var(--sand);
-      border-radius: 4px;
-      overflow: hidden;
-      margin-bottom: 10px;
-    }
-
-    .cb-bar-fill {
-      height: 100%;
-      background: var(--peach);
-      border-radius: 4px;
-    }
-
-    .cb-bottom {
-      display: flex;
-      justify-content: space-between;
-      font-size: 12px;
-      font-weight: 700;
-      color: var(--text-dark);
-    }
-
     /* Animations */
     @keyframes pop {
-      from { opacity: 0; transform: scale(0.88); }
-      to { opacity: 1; transform: scale(1); }
+      from {
+        opacity: 0;
+        transform: scale(0.88);
+      }
+
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
     }
 
     @keyframes rise {
-      from { opacity: 0; transform: translateY(12px); }
-      to { opacity: 1; transform: translateY(0); }
+      from {
+        opacity: 0;
+        transform: translateY(12px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
 
-    .txn-item { animation: rise 0.4s ease both; }
-    .txn-item:nth-child(1) { animation-delay: 0.04s; }
-    .txn-item:nth-child(2) { animation-delay: 0.08s; }
-    .txn-item:nth-child(3) { animation-delay: 0.12s; }
-    .txn-item:nth-child(4) { animation-delay: 0.16s; }
+    .txn-item {
+      animation: rise 0.4s ease both;
+    }
 
-    .goal-card { animation: rise 0.4s ease both; }
-    .goal-card:nth-child(1) { animation-delay: 0.05s; }
-    .goal-card:nth-child(2) { animation-delay: 0.10s; }
-    .goal-card:nth-child(3) { animation-delay: 0.15s; }
-    .goal-card:nth-child(4) { animation-delay: 0.20s; }
+    .txn-item:nth-child(1) {
+      animation-delay: 0.04s;
+    }
+
+    .txn-item:nth-child(2) {
+      animation-delay: 0.08s;
+    }
+
+    .txn-item:nth-child(3) {
+      animation-delay: 0.12s;
+    }
+
+    .txn-item:nth-child(4) {
+      animation-delay: 0.16s;
+    }
+
+    .goal-card {
+      animation: rise 0.4s ease both;
+    }
+
+    .goal-card:nth-child(1) {
+      animation-delay: 0.05s;
+    }
+
+    .goal-card:nth-child(2) {
+      animation-delay: 0.10s;
+    }
+
+    .goal-card:nth-child(3) {
+      animation-delay: 0.15s;
+    }
+
+    .goal-card:nth-child(4) {
+      animation-delay: 0.20s;
+    }
 
     /* Wrapped floating btn */
     .wrapped-fab {
@@ -2069,7 +1804,9 @@
       transition: transform 0.15s;
     }
 
-    .wrapped-fab:hover { transform: scale(1.05); }
+    .wrapped-fab:hover {
+      transform: scale(1.05);
+    }
   </style>
 </head>
 
@@ -2092,7 +1829,7 @@
           <div class="home-greeting">Good morning 👋</div>
           <div class="home-name">Hey, <em>Anushka</em></div>
         </div>
-        <div class="avatar" onclick="showScreen('profile')" style="cursor:pointer">🎓</div>
+        <div class="avatar">🎓</div>
       </div>
 
       <div class="balance-card">
@@ -2130,32 +1867,32 @@
         <button class="section-link" onclick="showScreen('analytics')">See all →</button>
       </div>
       <div class="cats-scroll">
-        <div class="cat-chip" onclick="openCat('Food')">
+        <div class="cat-chip">
           <div class="cat-icon-wrap" style="background:#fff0ec">🍔</div>
           <div class="cat-name">Food</div>
           <div class="cat-amount">₹1,840</div>
         </div>
-        <div class="cat-chip" onclick="openCat('Travel')">
+        <div class="cat-chip">
           <div class="cat-icon-wrap" style="background:#e8f5fe">🚌</div>
           <div class="cat-name">Travel</div>
           <div class="cat-amount">₹620</div>
         </div>
-        <div class="cat-chip" onclick="openCat('Subs')">
+        <div class="cat-chip">
           <div class="cat-icon-wrap" style="background:#f0ebff">📱</div>
           <div class="cat-name">Subs</div>
           <div class="cat-amount">₹398</div>
         </div>
-        <div class="cat-chip" onclick="openCat('Fun')">
+        <div class="cat-chip">
           <div class="cat-icon-wrap" style="background:#fef9ec">🎮</div>
           <div class="cat-name">Fun</div>
           <div class="cat-amount">₹780</div>
         </div>
-        <div class="cat-chip" onclick="openCat('Books')">
+        <div class="cat-chip">
           <div class="cat-icon-wrap" style="background:#e6f9f3">📚</div>
           <div class="cat-name">Books</div>
           <div class="cat-amount">₹240</div>
         </div>
-        <div class="cat-chip" onclick="openCat('Health')">
+        <div class="cat-chip">
           <div class="cat-icon-wrap" style="background:#fff0f5">💊</div>
           <div class="cat-name">Health</div>
           <div class="cat-amount">₹342</div>
@@ -2164,7 +1901,7 @@
 
       <div class="section-header">
         <span class="section-title">Recent</span>
-        <button class="section-link" onclick="showScreen('txns')">See all →</button>
+        <button class="section-link">See all →</button>
       </div>
       <div class="txn-list">
         <div class="txn-item">
@@ -2248,7 +1985,8 @@
                 <div class="alert-box-emoji">📺</div>
                 <div class="alert-box-title">Unused Subscription Alert!</div>
                 <div class="alert-box-detail">Netflix: last watched 18 days ago, ₹199/month. Cancel or share? That's
-                  <strong>₹2,388/year</strong> back! 🎉</div>
+                  <strong>₹2,388/year</strong> back! 🎉
+                </div>
               </div>
             </div>
             <div class="decision-chips">
@@ -2347,7 +2085,7 @@
         <span class="section-title">Categories</span>
       </div>
       <div class="breakdown-list">
-        <div class="breakdown-item" onclick="openCat('Food')">
+        <div class="breakdown-item">
           <div class="bd-dot" style="background:var(--peach)"></div>
           <div class="bd-name">🍔 Food</div>
           <div class="bd-bar-wrap">
@@ -2355,7 +2093,7 @@
           </div>
           <div class="bd-val">₹1,840</div>
         </div>
-        <div class="breakdown-item" onclick="openCat('Fun')">
+        <div class="breakdown-item">
           <div class="bd-dot" style="background:var(--yellow)"></div>
           <div class="bd-name">🎮 Fun</div>
           <div class="bd-bar-wrap">
@@ -2363,7 +2101,7 @@
           </div>
           <div class="bd-val">₹780</div>
         </div>
-        <div class="breakdown-item" onclick="openCat('Travel')">
+        <div class="breakdown-item">
           <div class="bd-dot" style="background:var(--sky)"></div>
           <div class="bd-name">🚌 Travel</div>
           <div class="bd-bar-wrap">
@@ -2371,7 +2109,7 @@
           </div>
           <div class="bd-val">₹620</div>
         </div>
-        <div class="breakdown-item" onclick="openCat('Subs')">
+        <div class="breakdown-item">
           <div class="bd-dot" style="background:var(--lavender)"></div>
           <div class="bd-name">📱 Subs</div>
           <div class="bd-bar-wrap">
@@ -2379,7 +2117,7 @@
           </div>
           <div class="bd-val">₹398</div>
         </div>
-        <div class="breakdown-item" onclick="openCat('Health')">
+        <div class="breakdown-item">
           <div class="bd-dot" style="background:#f9a8d4"></div>
           <div class="bd-name">💊 Health</div>
           <div class="bd-bar-wrap">
@@ -2387,7 +2125,7 @@
           </div>
           <div class="bd-val">₹342</div>
         </div>
-        <div class="breakdown-item" onclick="openCat('Books')">
+        <div class="breakdown-item">
           <div class="bd-dot" style="background:var(--mint)"></div>
           <div class="bd-name">📚 Books</div>
           <div class="bd-bar-wrap">
@@ -2605,185 +2343,6 @@
       </div>
     </div>
 
-    <!-- TRANSACTIONS -->
-    <div class="screen" id="screen-txns">
-      <div class="txns-header">
-        <button class="cat-back-btn" onclick="showScreen('home')" style="top:12px;left:18px">←</button>
-        <div class="page-title" style="text-align:center;font-size:22px">Transactions</div>
-      </div>
-      <div class="search-bar">
-        <span>🔍</span>
-        <input type="text" placeholder="Search transactions...">
-      </div>
-      <div class="filter-pills">
-        <button class="filter-pill active">All</button>
-        <button class="filter-pill">Food</button>
-        <button class="filter-pill">Transport</button>
-        <button class="filter-pill">Shopping</button>
-        <button class="filter-pill">Bills</button>
-      </div>
-      <div class="txn-group-label">Today, Apr 1</div>
-      <div class="txn-list">
-        <div class="txn-item">
-          <div class="txn-icon" style="background:#fff0ec">🍕</div>
-          <div class="txn-info">
-            <div class="txn-name">Domino's Pizza</div>
-            <div class="txn-sub">Food · 2:30 PM</div>
-          </div>
-          <div class="txn-amt neg">−₹349</div>
-        </div>
-        <div class="txn-item">
-          <div class="txn-icon" style="background:#e6f9f3">💸</div>
-          <div class="txn-info">
-            <div class="txn-name">Pocket Money</div>
-            <div class="txn-sub">Income · 10:00 AM</div>
-          </div>
-          <div class="txn-amt pos">+₹5,000</div>
-        </div>
-      </div>
-      <div class="txn-group-label">Yesterday, Mar 31</div>
-      <div class="txn-list">
-        <div class="txn-item">
-          <div class="txn-icon" style="background:#e8f5fe">🚗</div>
-          <div class="txn-info">
-            <div class="txn-name">Ola Cab</div>
-            <div class="txn-sub">Transport · 8:15 PM</div>
-          </div>
-          <div class="txn-amt neg">−₹128</div>
-        </div>
-        <div class="txn-item">
-          <div class="txn-icon" style="background:#f0ebff">🎵</div>
-          <div class="txn-info">
-            <div class="txn-name">Spotify Premium</div>
-            <div class="txn-sub">Subscription · 9:00 AM</div>
-          </div>
-          <div class="txn-amt neg">−₹119</div>
-        </div>
-      </div>
-      <div class="txn-group-label">Mar 30</div>
-      <div class="txn-list">
-        <div class="txn-item">
-          <div class="txn-icon" style="background:#fef9ec">🍟</div>
-          <div class="txn-info">
-            <div class="txn-name">McDonald's</div>
-            <div class="txn-sub">Food · 1:45 PM</div>
-          </div>
-          <div class="txn-amt neg">−₹210</div>
-        </div>
-      </div>
-    </div>
-
-    <!-- PROFILE -->
-    <div class="screen" id="screen-profile">
-      <div class="profile-top">
-        <div class="profile-avatar-wrap">
-          <div class="profile-avatar">🎓</div>
-          <div class="edit-badge">✏️</div>
-        </div>
-        <div class="profile-name">Anushka Sharma</div>
-        <div class="profile-email">anushka@college.edu</div>
-        <div class="profile-stats">
-          <div class="p-stat-card">
-            <div class="p-stat-val">₹2,180</div>
-            <div class="p-stat-lab">Saved</div>
-          </div>
-          <div class="p-stat-card">
-            <div class="p-stat-val">72</div>
-            <div class="p-stat-lab">Score</div>
-          </div>
-          <div class="p-stat-card">
-            <div class="p-stat-val">5d</div>
-            <div class="p-stat-lab">Streak</div>
-          </div>
-        </div>
-      </div>
-      <div class="settings-list">
-        <div class="settings-group">
-          <div class="settings-title">App Settings</div>
-          <div class="settings-item">
-            <div class="settings-item-icon" style="background:#e8f5fe">💰</div>
-            <div class="settings-item-label">Monthly Budget</div>
-            <div class="settings-item-val">₹8,500</div>
-          </div>
-          <div class="settings-item">
-            <div class="settings-item-icon" style="background:#f0ebff">🔔</div>
-            <div class="settings-item-label">Notifications</div>
-            <div class="settings-item-val">On</div>
-          </div>
-          <div class="settings-item">
-            <div class="settings-item-icon" style="background:#fff0ec">🎨</div>
-            <div class="settings-item-label">Theme</div>
-            <div class="settings-item-val">Soft Peach</div>
-          </div>
-        </div>
-        <div class="settings-group">
-          <div class="settings-title">Security & Data</div>
-          <div class="settings-item">
-            <div class="settings-item-icon" style="background:#e6f9f3">🔐</div>
-            <div class="settings-item-label">Passcode Lock</div>
-            <div class="settings-item-val">Off</div>
-          </div>
-          <div class="settings-item">
-            <div class="settings-item-icon" style="background:#fef9ec">📤</div>
-            <div class="settings-item-label">Export Data (CSV)</div>
-            <div class="settings-item-val">→</div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- CATEGORY DETAIL -->
-    <div class="screen" id="screen-cat-detail">
-      <div class="cat-detail-header">
-        <button class="cat-back-btn" onclick="showScreen('home')">←</button>
-        <div class="cat-detail-icon" id="cdIcon">🍔</div>
-        <div class="cat-detail-name" id="cdName">Food & Dining</div>
-        <div class="cat-detail-spent">Spent ₹1,840 this month</div>
-      </div>
-      <div class="cat-budget-card">
-        <div class="cb-top">
-          <div class="cb-label">Category Budget</div>
-          <div class="cb-pct">86% used</div>
-        </div>
-        <div class="cb-bar-wrap">
-          <div class="cb-bar-fill" style="width:86%"></div>
-        </div>
-        <div class="cb-bottom">
-          <span>₹1,840</span>
-          <span style="color:var(--text-soft)">of ₹2,200</span>
-        </div>
-      </div>
-      <div class="section-header">
-        <span class="section-title">Transactions</span>
-      </div>
-      <div class="txn-list" style="margin-top:0">
-        <div class="txn-item">
-          <div class="txn-icon" style="background:#fff0ec">🍕</div>
-          <div class="txn-info">
-            <div class="txn-name">Domino's Pizza</div>
-            <div class="txn-sub">Today, 2:30 PM</div>
-          </div>
-          <div class="txn-amt neg">−₹349</div>
-        </div>
-        <div class="txn-item">
-          <div class="txn-icon" style="background:#fff0ec">🍟</div>
-          <div class="txn-info">
-            <div class="txn-name">McDonald's</div>
-            <div class="txn-sub">Yesterday, 1:45 PM</div>
-          </div>
-          <div class="txn-amt neg">−₹210</div>
-        </div>
-        <div class="txn-item">
-          <div class="txn-icon" style="background:#fff0ec">🥪</div>
-          <div class="txn-info">
-            <div class="txn-name">College Canteen</div>
-            <div class="txn-sub">Mar 29, 12:00 PM</div>
-          </div>
-          <div class="txn-amt neg">−₹145</div>
-        </div>
-      </div>
-    </div>
-
     <!-- BOTTOM NAV -->
     <div class="bottom-nav">
       <button class="nav-item active" id="nav-home" onclick="showScreen('home')">
@@ -2798,9 +2357,6 @@
       </button>
       <button class="nav-item" id="nav-chat" onclick="showScreen('chat')">
         <span class="nav-icon">🤖</span><span class="nav-label">Buddy</span>
-      </button>
-      <button class="nav-item" id="nav-profile" onclick="showScreen('profile')">
-        <span class="nav-icon">👤</span><span class="nav-label">Profile</span>
       </button>
     </div>
   </div>
@@ -2862,154 +2418,13 @@
     </div>
   </div>
 
-  <script>
-    // Nav
-    function showScreen(name) {
-      document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
-      document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
-      const s = document.getElementById('screen-' + name);
-      if (s) s.classList.add('active');
-      const n = document.getElementById('nav-' + name);
-      if (n) n.classList.add('active');
-    }
-
-    // Modals
-    function openAddModal() { document.getElementById('addModal').classList.add('open'); }
-    function openAffordModal() {
-      document.getElementById('affordModal').classList.add('open');
-      document.getElementById('affordRes').style.display = 'none';
-      document.getElementById('affordAmt').value = '';
-    }
-    function closeM(id) { document.getElementById(id).classList.remove('open'); }
-    document.querySelectorAll('.modal-overlay').forEach(m => m.addEventListener('click', function (e) { if (e.target === this) this.classList.remove('open'); }));
-
-    function selCat(el) { document.querySelectorAll('.cat-btn').forEach(c => c.classList.remove('sel')); el.classList.add('sel'); }
-
-    function submitExp() {
-      const amt = document.getElementById('expAmt').value;
-      const desc = document.getElementById('expDesc').value || 'misc';
-      if (!amt) return;
-      closeM('addModal');
-      setTimeout(() => {
-        showScreen('chat');
-        addBotMsg(`Logged ₹${amt} for "${desc}" 📝. Remaining balance: ₹${Math.max(0, 4280 - parseInt(amt)).toLocaleString()}. ${parseInt(amt) > 500 ? "⚠️ That's a big one — want tips to save this week?" : "💪 Good job tracking every rupee!"}`);
-      }, 300);
-    }
-
-    function openCat(name) {
-      const icons = { Food: '🍔', Fun: '🎮', Travel: '🚌', Subs: '📱', Health: '💊', Books: '📚' };
-      const amits = { Food: '1,840', Fun: '780', Travel: '620', Subs: '398', Health: '342', Books: '240' };
-      const budgets = { Food: '2,200', Fun: '1,000', Travel: '800', Subs: '500', Health: '500', Books: '500' };
-      const pcts = { Food: '86%', Fun: '78%', Travel: '77%', Subs: '79%', Health: '68%', Books: '48%' };
-      
-      document.getElementById('cdIcon').textContent = icons[name] || '📦';
-      document.getElementById('cdName').textContent = name;
-      document.getElementById('screen-cat-detail').querySelector('.cat-detail-spent').textContent = `Spent ₹${amits[name]} this month`;
-      document.getElementById('screen-cat-detail').querySelector('.cb-pct').textContent = `${pcts[name]} used`;
-      document.getElementById('screen-cat-detail').querySelector('.cb-bar-fill').style.width = pcts[name];
-      document.getElementById('screen-cat-detail').querySelector('.cb-bottom').innerHTML = `<span>₹${amits[name]}</span><span style="color:var(--text-soft)">of ₹${budgets[name]}</span>`;
-      
-      showScreen('cat-detail');
-    }
-
-    const BALANCE = 4280, DAILY = 326;
-    function checkAfford() {
-      const amt = parseInt(document.getElementById('affordAmt').value) || 0;
-      if (!amt) { document.getElementById('affordRes').style.display = 'none'; return; }
-      document.getElementById('affordRes').style.display = 'block';
-      const left = BALANCE - amt, days = Math.max(0, Math.floor(left / DAILY));
-      let em, v, d;
-      if (amt <= BALANCE * 0.1) {
-        em = '✅'; v = 'Yes, go for it!';
-        d = `₹${amt} is just ${((amt / BALANCE) * 100).toFixed(0)}% of your balance. You'll have ₹${left.toLocaleString()} left — about ${days} more days of spending. Treat yourself! 🎉`;
-      } else if (amt <= BALANCE * 0.3) {
-        em = '🤔'; v = 'Maybe — think twice';
-        d = `After spending ₹${amt}, you'd have ₹${left.toLocaleString()} left — enough for ${days} days. Can this wait until next month for a deal?`;
-      } else {
-        em = '⚠️'; v = 'Risky! Better to wait.';
-        d = `₹${amt} would leave you only ₹${left.toLocaleString()} — just ${days} days with 13 left this month. You'd likely run out! Wait or find a cheaper alternative. 😬`;
-      }
-      document.getElementById('aEmoji').textContent = em;
-      document.getElementById('aVerdict').textContent = v;
-      document.getElementById('aDetail').textContent = d;
-    }
-
-    // Bar chart
-    (function () {
-      const bc = document.getElementById('barChart');
-      if (!bc) return;
-      const data = [{ m: 'Jan', v: 3800, c: 'var(--peach)' }, { m: 'Feb', v: 5200, c: 'var(--sky)' }, { m: 'Mar', v: 7100, c: 'var(--lavender)' }, { m: 'Apr', v: 4220, c: 'var(--peach)', hi: true }];
-      const max = Math.max(...data.map(d => d.v));
-      data.forEach(d => {
-        const h = Math.round((d.v / max) * 90);
-        const col = document.createElement('div');
-        col.className = 'bar-col';
-        col.innerHTML = `<div class="bar-fill ${d.hi ? 'hi' : ''}" style="height:${h}px;background:${d.c};opacity:${d.hi ? 1 : 0.45}"></div><div class="bar-label">${d.m}</div>`;
-        bc.appendChild(col);
-      });
-    })();
-
-    // Chat AI
-    const REPLIES = {
-      afford: (msg) => {
-        const m = msg.match(/(\d+)/); const amt = m ? parseInt(m[1]) : 500;
-        const left = BALANCE - amt, days = Math.max(0, Math.floor(left / DAILY));
-        if (amt < BALANCE * 0.1) return `✅ Totally fine! ₹${amt} is only ${((amt / BALANCE) * 100).toFixed(0)}% of your balance. You'll still have ₹${left.toLocaleString()} for ${days} more days. Enjoy it! 🎉`;
-        if (amt < BALANCE * 0.3) return `🤔 You could, but ₹${amt} leaves you ₹${left.toLocaleString()} for ${days} days. Doable, but maybe check if it's on sale? 💡`;
-        return `⚠️ Be careful! ₹${amt} would leave you only ₹${left.toLocaleString()} — just ${days} days at your current pace. With ${13} days left this month, you'd likely run out. I'd wait! 😬`;
-      },
-      zomato: () => `🔥 5 days Zomato-free — saving ~₹240/day! 2 more days and you unlock 🏆 Foodie Champion. Your wallet AND your cooking skills are both levelling up!`,
-      save: () => `💡 Top 3 ways to save this month:\n1. Cancel Netflix (unused 18 days) → save ₹199\n2. Cook 3 days/week instead of ordering → ~₹900 saved\n3. Use the Spotify family plan → save ₹60/mo\nTotal: ~₹1,159 back! 🪄`,
-      balance: () => `Your balance is ₹4,280. At ₹326/day, you'll last ~13 more days. The month ends in 13 days — you're right on track! 🎯 Keep it up!`,
-      sip: () => `📈 Love that you're thinking about this!\n• ₹500/month SIP for 10 yrs → ~₹1.15L\n• 20 yrs → ~₹4.5L\n• 30 yrs → ~₹14L\nEven ₹100/month compounds beautifully. Want me to set up a SIP goal? 🌱`,
-      netflix: () => `📺 Netflix: You haven't watched in 18 days but paid ₹199 last month. That's ₹2,388/year for a "maybe I'll watch it" subscription.\n\nOptions:\n• Cancel → save ₹199/mo\n• Share with 1 friend → pay ₹100 each\n• Downgrade to mobile-only → ₹149/mo 📱`,
-      default: () => `I'm looking at your patterns... 🔍 Your biggest opportunity: food spending is 44% of your budget! Small change: cook 3 days a week and save ~₹900/month. Want a weekly meal budget plan?`
-    };
-
-    function getReply(msg) {
-      const l = msg.toLowerCase();
-      if (/afford|buy|can i|₹|\d{3,}/.test(l)) return REPLIES.afford(msg);
-      if (/zomato|streak|cook|food order/.test(l)) return REPLIES.zomato();
-      if (/save|saving|cut|cancel|subscri/.test(l) && !/netflix/.test(l)) return REPLIES.save();
-      if (/balance|left|remaining|how much/.test(l)) return REPLIES.balance();
-      if (/sip|invest|mutual|fund|stock/.test(l)) return REPLIES.sip();
-      if (/netflix/.test(l)) return REPLIES.netflix();
-      return REPLIES.default();
-    }
-
-    function addBotMsg(text) {
-      const c = document.getElementById('chatMsgs');
-      const r = document.createElement('div');
-      r.className = 'msg-row';
-      r.innerHTML = `<div class="msg-avatar">🤖</div><div><div class="msg-bubble bot">${text.replace(/\n/g, '<br>')}</div><div class="msg-time">Just now</div></div>`;
-      c.appendChild(r);
-      c.scrollTop = c.scrollHeight;
-    }
-    function addUserMsg(text) {
-      const c = document.getElementById('chatMsgs');
-      const r = document.createElement('div');
-      r.className = 'msg-row user';
-      r.innerHTML = `<div class="msg-time">Just now</div><div class="msg-bubble user">${text}</div>`;
-      c.appendChild(r);
-      c.scrollTop = c.scrollHeight;
-    }
-    function sendChat() {
-      const inp = document.getElementById('chatInput');
-      const txt = inp.value.trim();
-      if (!txt) return;
-      addUserMsg(txt); inp.value = '';
-      setTimeout(() => addBotMsg(getReply(txt)), 650);
-    }
-    function sendQ(text) {
-      showScreen('chat');
-      setTimeout(() => { addUserMsg(text); setTimeout(() => addBotMsg(getReply(text)), 650); }, 200);
-    }
-
-    // Round-up toggle
-    function toggleRoundup(btn) {
-      btn.classList.toggle('off');
-    }
-  </script>
+  <!-- External Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/chat.js"></script>
+  <script src="js/insights.js"></script>
+  <script src="js/goals.js"></script>
+  <script src="js/wrapped.js"></script>
 </body>
 
 </html>
